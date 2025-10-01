@@ -1,37 +1,136 @@
-body{
-    
+body {
+    margin: 0;
+}
+
+.a-link {
+    color: red;
+    font-weight: 900;
+}
+
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.container{
-    width: 700px;
-    background-color: #98cbfd;
-    padding: 0px 50px;
+
+.header {
+    height: 20%;
 }
-.header{
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 300px;
-    background-color: aqua;
-    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
-}
-.header-top{
-    border-bottom: 4px solid black;
+
+.headercontent {
+    display: block;
+    font-size: 17px;
+    font-style: italic;
     text-align: center;
-    height: 40px;
+    height: 20%;
+    font-weight: 900;
+    text-shadow: 5px 5px rgb(237, 198, 205);
+    color: rgb(234, 159, 172);;
 }
-.header-bottom{
-    text-align: center;
-    height: 40px;
+
+.headerbox {
+    display: flex;
+    background-color: rgb(240, 132, 150);
 }
-h1{
-    padding: 0px;
-    margin: 0px;
+
+.headerbox1 {
+    margin: auto;
 }
-.Commentor{
-    width: 400px;
-    height: 70px;
+
+.headerbox2 {
+    display: inline-block;
+    padding: 5px 30px;
 }
-.Click{
-    text-align: center;
+
+.headerbox3 {
+    border-right: 1px solid rgb(43, 110, 226);
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.body {
+    display: flex;
+    margin-top: 10px;
+    height: 60%;
+    flex: 1 0 auto;
+}
+
+.left {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.middle {
+    width: 55%;
+}
+
+.right {
+    width: 25%;
+}
+
+.bodyboxleft1 {
+    background-color: rgb(236, 148, 163);
+    border-radius: 12px;
+    color: white;
+    padding: 5px 0 5px 20px;
+    margin: 5px 0 7px 5px;
+    width: 70%;
+}
+
+.bodyboxpic {
+    width: 200px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0 0 10px;
+    box-shadow: 5px 5px 5px 5px rgb(239, 173, 185);
+}
+
+.bodyboxmiddle1 {
+    font-weight: 900;
+    font-size: 25px;
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgb(246, 137, 155);
+    color: rgb(215, 88, 109);
+    letter-spacing: 17px;
+    padding: 0 0 0 40px;
+}
+
+
+.name {
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.button {
+    padding: 10px 5px;
+}
+
+.bodyboxright {
+    background-color: black ;
+}
+
+.img-right {
+    width: 280px;
+    height: 150px;
+}
+
+.img-content, .right-content {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer {
+    width: 100%;
+    flex: 0 0 auto;
+    font-style: italic;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(247, 146, 163);
+    height: 20%;
 }
